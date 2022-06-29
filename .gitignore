@@ -1,5 +1,6 @@
 #gh branch
 docs/.vuepress/dist
+.temp
 # Logs
 logs
 *.log

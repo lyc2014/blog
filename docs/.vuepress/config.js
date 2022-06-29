@@ -37,7 +37,7 @@ module.exports = {
         },
         // 博主信息 (显示在首页侧边栏)
         blogger: {
-            avatar: '/imgs/avatar.jpg',
+            avatar: '/blog/imgs/avatar.jpg',
             name: 'Leonardo',
             slogan: '前端界的小学生',
         },

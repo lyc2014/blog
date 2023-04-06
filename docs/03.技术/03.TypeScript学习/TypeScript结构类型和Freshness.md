@@ -168,3 +168,8 @@ let moreFun: (arg: string, num: number) => void = lessFun // 没毛病
 例子二中 typescript把 lessFun 看成了"鸭子" 因为后面moreFun的执行 moreFun（）  也就是执行 lessFun 定义的函数。能否成功“鸭叫”取决于lessFun 定义的这个函数是否能成功执行，所以 moreFun 是 “会鸭叫的鸡”也没问题，也就是符合 输入包含第一个参数 arg: string 且输出 包含void 即可，这样它会鸭叫就行
 
 总结，谁是鸭子主要还是看功能目的，let animal: Animal = dog  这里Animal 突出为目的，animal 要实现 Animal 的功能。如果认为 dog 为鸭子显然不合理。 例子二 let moreFun: (arg: string, num: number) => void = lessFun。 这里 moreFun 后续的使用是符合 lessFun 函数定义的  目的是不能让它报错  所以它就是“鸭叫”功能。
+
+```typescript
+let chicken: (s: string, n: number) => void = function (s: string) {}
+```
+后面的匿名函数是鸭子   chicken是“会鸭叫的鸡”。

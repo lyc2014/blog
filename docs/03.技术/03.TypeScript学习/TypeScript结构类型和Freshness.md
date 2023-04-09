@@ -173,3 +173,12 @@ let moreFun: (arg: string, num: number) => void = lessFun // 没毛病
 let chicken: (s: string, n: number) => void = function (s: string) {}
 ```
 后面的匿名函数是鸭子   chicken是“会鸭叫的鸡”。
+
+再举个例子思考
+
+```typescript
+  let chicken1: (n: number, s: string) => void = function (n: number): number {
+    return n
+  }  // 没毛病
+```
+这个例子输出 void 跟输出 number 对不上，chicken1 的输出定义了void 不会对 chicken1() 的结果有任何操作，也就是说 它不影响 "鸭叫" 输出 number 不可能因此造成出错，也等于他也 符合 “鸭叫” 功能。

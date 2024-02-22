@@ -14,5 +14,8 @@
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-theme-vdoing": "^1.12.4"
+  },
+  "engines": {
+    "node": "=16.0.0"
   }
 }

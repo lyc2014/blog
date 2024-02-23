@@ -19,7 +19,7 @@ module.exports = {
             },
             {
                 text: '技术',
-                link: 'technology',
+                link: '/technology/',
                 items: []
             }
         ],
